@@ -80,17 +80,20 @@ print(type(y))
 print(y[0])
 print(y[1])
 print(y[2])
-x=[10,20,300]  #range- 0 to 256
+x=[10,20,300]  #range- [0 to 256) --> ValueError
 y=bytes(x)
 print(y)
 x=[100,200]
 y=bytes(x)
-y[0]=110       #bytes is immutable
+y[0]=110       #bytes are immutable --> TypeError
 print(y)
+x=[10,20,30,100]
+y=bytes(x)
+for i in y:
+    print(i)
 """
 """
-#range datatype
-l1=range(5)      #0-4
+l1=range(5)      #0-4             #range datatype
 l2=range(2,7)    #2-6
 l3=range(2,10,2) #2,4,6,8
 print(l1)
@@ -99,6 +102,8 @@ print(l3)
 print(type(l3))
 for i in l3:
     print(i)
+a=range(10,2)   #will create nothing
+print(a)
 """
 """
 #type-conversion
@@ -117,4 +122,14 @@ print(y)
 a='abc'
 b=int(a)
 print(b)
+a='hello'            #boolean-conversion
+a=bool(a)
+print(a,type(a))
+print(a*10)
+b=""
+b=bool(b)
+print(b,type(b))
+print(b*10)
 """
+
+
