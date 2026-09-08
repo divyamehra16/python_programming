@@ -64,7 +64,7 @@ print(year)
 """
 
 
-#7.join()  --> joining list elements in a string  --> <delimiter.join(<list>)
+#7. join()  --> joining list elements in a string  --> <delimiter.join(<list>)
 """ 
 l1=['33','22','11']
 s1='/'.join(l1)
@@ -74,7 +74,7 @@ print(s1,type(s1))
 print(l1,type(l1)) """
 
 
-# Other methods --> {For cases} --> <str>.upper(), <str>.lower(), <str>.swapcase(), <str>.title(), <str>.capitalize()
+#8. Other methods --> {For cases} --> <str>.upper(), <str>.lower(), <str>.swapcase(), <str>.title(), <str>.capitalize()
 """
 a="pYtHON is A proGRammINg LanGUAGe"
 print(a.upper())
@@ -92,7 +92,7 @@ print(b,type(b))
 print(b.isdigit())                 #only applicable for string
 """
 
-# format() --> *PLACEHOLDERS   -->*String Interpulation*
+#9. format() --> *PLACEHOLDERS   -->*String Interpulation*
 # value , number, nickname
 name="xyz"
 age=12
