@@ -48,3 +48,11 @@ if s2>s1:
     print('1 : number of * greater than #')
 if s1==s2:
     print('0 number of * and # are equal')
+
+
+    
+'''WAP that takes a string as input and extract all charcters at even position(0,2,4...) and odd position (1,3,5...) separately using a slicing. and display'''
+
+str1=input('enter a string ; ')
+print('even positioned characters : ',str1[::2])
+print('odd positioned charaters : ',str1[1::2])
