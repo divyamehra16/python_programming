@@ -54,5 +54,5 @@ if s1==s2:
 '''WAP that takes a string as input and extract all charcters at even position(0,2,4...) and odd position (1,3,5...) separately using a slicing. and display'''
 
 str1=input('enter a string ; ')
-print('even positioned characters : ',str1[::2])
-print('odd positioned charaters : ',str1[1::2])
+print('even index characters : ',str1[::2])
+print('odd index charaters : ',str1[1::2])
