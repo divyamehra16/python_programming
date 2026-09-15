@@ -94,6 +94,7 @@ print(b.isdigit())                 #only applicable for string
 
 #9. format() --> *PLACEHOLDERS   -->*String Interpulation*
 # value , number, nickname
+""" 
 name="xyz"
 age=12
 place='noida'
@@ -104,10 +105,12 @@ print(str1)
 str1="{1} is {2} years old and lives in {0}".format(place,name,age)          #indexing type-stuff
 print(str1)
 str1="{n} is {a} years old and lives in {p}".format(p=place,n=name,a=age)    #nickname
-print(str1)
+print(str1) """
 
 #f-strings
+""" 
 str1=f"{name} is {age} years old and lives in {place}"          #shortcut way
 print(str1)
 link="https://google.com"
 print(f"Hi this is the {link}")
+"""
