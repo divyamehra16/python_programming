@@ -67,9 +67,62 @@ sum()
 add()
 
 
-# 2. pass function as a parameters to another functions.
+# 2. passing function as a parameters to another functions.
 def display(x):
     print("This is display function!")
 def message():
     print("Python World!")
 display(message())          #function ka parameter -> dusra function
+
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def operate(func,x,y):
+    return func(x,y)
+print(operate(add,12,5))
+print(operate(sub,12,5))
+
+
+# 3. define one function inside another
+def outer():
+    print("Outer Function!")
+    def inner():
+        print("Inner Function!")
+    inner()
+outer()
+
+
+# 4. function can return another function
+def outer():
+    print("Outer Function!")
+    def inner():
+        print("Inner Function!")
+    return inner
+func1=outer()
+func1()
+
+
+# SUM UP:
+def createfunction():
+    def  add(a,b):      #funct defined under another funct
+        return a+b
+    def sub(a,b):
+        return a-b
+    return add,sub      #assigning a function to a variable 
+def executefunction(func,x,y):
+    return func(x,y)    # function returning another function
+sum,diff=createfunction()
+print(executefunction(sum,25,5))    # function as a parameter of another function
+print(executefunction(diff,25,5))
+
+
+def add(a,b):
+    return a+b
+l1=[add,35,5]
+val=l1[0](l1[1],l1[2])
+print(val)
+
+l2=[sum,len]
+for i in l2:
+    print(i([1,2,3,4]))
