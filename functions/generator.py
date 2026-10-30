@@ -18,3 +18,19 @@ def apnarange(x,y,s=1):
         x+=s
 l1=list(apnarange(5,10))
 print(l1)
+
+
+def apnarange(x,y,s=1):
+    while x<=y:
+        yield x
+        x+=s
+g=apnarange(5,10)
+print(g)
+print(type(g))
+print(next(g))      # extracting values from a generator
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))      # StopIteration--> END OF CONTENT in an generator.
