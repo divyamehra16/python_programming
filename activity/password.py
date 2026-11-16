@@ -1,9 +1,12 @@
+
 n=int(input("enter a number: "))
+
 for i in range(n):
     upper,lower,digit,special,nosp,length=0,0,0,0,1,0
     password=input("enter your password: ")
     if len(password)>=8:
         length=1
+
     for j in password:
         if j.isalpha():
             if j.isupper():
@@ -16,8 +19,8 @@ for i in range(n):
             special=1
         elif j.isspace():
             nosp=0
+
     l1=[upper,lower,digit,special,nosp,length]
-    print(l1)
     if sum(l1)==6:
         print(f"{password}: Strong {sum(l1)}/6")
     else:
