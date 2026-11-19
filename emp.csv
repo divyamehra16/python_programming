@@ -1,3 +1,3 @@
-EMP No,Name,Salary,Addr
-101,xyz,80000,hostel
-102,abc,70000,hostel
+EMP No,EMP Name,EMP Salary,EMP Addr
+101,xyz,800000,hostel
+abc,abc,1000000,hostel
